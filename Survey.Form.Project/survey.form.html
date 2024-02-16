@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="survey.form.css">
+</head>
+<center>
+  <h1>*Survey Form*</h1>
+<form>
+<body>
+  <br>
+  <p>Let us know how we can improve freeCodeCamp</p>
+  * Full Name :
+  <input type="text" placeholder="Enter name" required>
+  <br><br>
+  * Email :
+  <input type="email" placeholder="Enter email" required>
+  <br><br>
+  * password :
+  <input type="password" placeholder="Enter password" required minlength="5" maxlength="8">
+  <br><br>
+  * Age :
+  <input id="number" type="number" min="18" max="100" placeholder="Age">
+  <br>
+  * Which option best describes your current role?
+  <select id="select">
+    <option value="Student">Student</option>
+    <option value="Professor">Professor</option>
+    <option value="Doctor">Doctor</option>
+    <option value="Engineer">Engineer</option>
+  </select>
+  <br><br>
+  <div class="row">
+    <div class="Left">
+      <p>* How likely is that you would recommend freeCodeCamp to a friend?</p>
+    </div>
+    <div class="Right">
+      <input type="radio" name="radio" value="definitely">Definitely<br>
+      <input type="radio" name="radio" value="maybe">Maybe<br>
+      <input type="radio" name="radio" value="notsure">Not sure<br>
+    </div>
+  </div>
+  <div class="row">
+    <div class="Left">
+      <label>What do you like most in FCC:</label>
+    </div>
+    <div class="Right">
+      <select placeholder="Select an option">
+        <option disabled selected value>Select an option</option>
+        <option value="challenges">Curriculum</option>
+        <option value="projects">Assignment</option>
+        <option value="community">Projects</option>
+        <option value="opensource">Easy to use</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="Left">
+      <p>Things that should be improved in the future (Check all that apply):</p>
+    </div>
+    <div class="Right">
+      <input type="checkbox" name="future" value="Frontend">Front-End Projects<br>
+      <input type="checkbox" name="future" value="Backend">Back-End Projects<br>
+      <input type="checkbox" name="future" value="Datavis">Data Visualization<br>
+  </div>
+</body>
+</center>
+</form>
+</html>
+
+
+
